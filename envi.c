@@ -7,12 +7,12 @@
 
 void _envi_vari(char **envp)
 {
-	int i = 0;
+	int p = 0;
 
-	while (envp[i] != NULL)
+	while (envp[p] != NULL)
 	{
-		write(STDOUT_FILENO, envp[i], strlen(envp[i]));
+		write(STDOUT_FILENO, envp[p], strlen(envp[p]));
 		write(STDOUT_FILENO, "\n", 1);
-		i++;
+		p++;
 	}
 }
