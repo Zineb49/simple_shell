@@ -52,7 +52,7 @@ int manage_cmd(char *buffer, char **envp)
 	char **argv;
 	char *cmd;
 
-	argv = split_string(buffer, ' ');
+	argv = string_split(buffer, ' ');
 	cmd = argv[0];
 	argv = func_helper(argv);
 
